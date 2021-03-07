@@ -13,9 +13,13 @@ const Template = (args) => <Page {...args} />;
 export const LoggedIn = Template.bind({});
 LoggedIn.args = {
   ...HeaderStories.LoggedIn.args,
+  onLogin: () => {},
+  onLogout: () => {},
 };
 
 export const LoggedOut = Template.bind({});
 LoggedOut.args = {
   ...HeaderStories.LoggedOut.args,
+  onLogin: () => {},
+  onLogout: () => {},
 };
